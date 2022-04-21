@@ -1,0 +1,50 @@
+#timeline{
+    position: relative;
+	margin: 0 auto;
+	width: 30%;
+	height: 5%;
+	top: 15vmax;
+	
+}
+.prg_spn {
+    color: white;
+	font-size: 7px;
+	position: absolute;
+	top: -20px;
+}
+#current-time {
+    left: 0;
+}
+#total-time {
+    right: 0;
+}
+.slider{
+	background-color: rgba(255, 255, 255, 0.4);
+		border-radius: 2px;
+		cursor: pointer;
+		height: 2px;
+		position: relative;
+		width: 100%;
+}
+.progress{
+	background-color: red;
+			height: 100%;
+			pointer-events: none;
+			position: absolute;
+			width: 0;
+}
+.pin{
+	background-color: white;
+				border-radius: 8px;
+				height: 8px;
+				position: absolute;
+				pointer-events: all;
+				right: -5px;
+				top: -3px;
+				width: 8px;
+				box-shadow :0px 1px 1px 0px rgba(0,0,0,0.32);
+				transition: transform 0.25s ease;
+}
+.pin:active {
+	transform:scale(1.5);
+}
